@@ -1,0 +1,436 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.logo h1 {
+    color: black; /* Cambia el color del texto a azul */
+    font-size: 2em; /* Ajusta el tamaño de la letra según tus preferencias */
+    font-weight: bold; /* Hace que la letra sea más gruesa */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+
+
+
+
+.header {
+    margin: center;
+}
+
+.secciones {
+    margin: auto;
+    justify-content: center;
+    position: auto;
+    text-decoration: none;
+    
+}
+
+.secciones nav a {
+    font-size: 1.5em; /* Aumenta el tamaño de la letra */
+    font-weight: bold; /* Hace la letra más gruesa */
+    margin: 0 60px; /* Espaciado entre los enlaces */
+    text-decoration: none;
+   
+}
+
+.slider {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;  /* Permite que las imágenes se alineen en fila */
+    transition: transform 0.5s ease; /* Transición suave al cambiar de imagen */
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del contenedor */
+    
+    height: 400px; /* Establece una altura fija para todas las imágenes */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+   
+}
+
+.slider img {
+    flex: 1;
+     
+    height: 200%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    max-height: 430px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    opacity: 0.8; /* Opacidad inicial */
+    transition: 0.5s ease; /* Transición suave para hover */
+    height: 430px; /* Establece una altura fija para todas las imágenes */
+    
+}
+
+ 
+
+
+
+
+button {
+    
+    top: 50%;
+    
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 70px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.pie-de-pagina {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 4px; /* Espaciado interno */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Asegura que esté al fondo */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.imagenes-footer {
+    display: flex; /* Usamos flexbox para alinear las imágenes horizontalmente */
+    justify-content: center; /* Centra las imágenes */
+    align-items: center; /* Alinea las imágenes verticalmente al centro */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias líneas si es necesario */
+}
+
+.imagenes-footer img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 10px; /* Espaciado entre las imágenes */
+    flex: 1 1 150px; /* Permite que las imágenes se ajusten y crezcan según el espacio disponible */
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .imagenes-footer img {
+        max-width: 80%; /* Limita el ancho máximo en pantallas pequeñas */
+    }
+}
+
+
+
+
+.imagengrande {
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo-1 {
+    text-align: center;
+    margin: 0;   /*centrar la seccion de fotos deslizantes*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rectangulo1 {
+    width: 1000px; /* achicar el ancho de las rayas grises ---------------------------*/
+    height: 100px;
+    background-color: gray;
+    position: relative;
+    margin: 0px;
+}
+.rectangulo2 {
+    width: 1000px;
+    height: 100px;
+    background-color: gray;
+    position: absolute;
+    top: 200px;
+}
+
+
+
+
+
+/* Estilos del menú en Categorías*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative; /* Importante para el desplegable */
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Estilo del enlace principal (Categoría) */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+/* El menú desplegable oculto por defecto */
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alineado justo debajo de la palabra Categoría */
+    left: 0;
+    background-color: white;
+    padding: 0;
+    list-style-type: none;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+/* Mostrar el menú cuando se pasa el mouse sobre Categoría */
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilo de los enlaces dentro del menú */
+nav ul li .dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilo al pasar el mouse sobre las opciones del menú */
+nav ul li .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+/* sobre el About  poniendo fotos delizantes*/
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+     
+
+}
+section img {
+    width: 0;
+  
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+opacity: 1;
+filter: contrast(120%);
+
+}
+
+
+
+
+
+
+/* estilo para los qr en About*/
+.qr {
+    width: 300px;
+    text-align: center;
+    display: flex; /* Usamos flexbox para alinear las imágenes horizontalmente */
+    margin: 1  auto;
+   
+    
+
+}
+
+
+
+
+
+
+/*para hacerlo responsivo*/
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Ajustar elementos en pantallas pequeñas */
+    justify-content: space-around;
+}
+
+.imagen-derecha {
+    margin-left: 20px;
+    width: 100px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header img {
+        height: 60px; /* Reducción de logo en móviles */
+    }
+}
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+
+    .header { 
+    flex-direction: column; /* Cambia la dirección del flex en pantallas pequeñas */
+    }
+    }
+
+
+
+
+
+        .container {
+            display: flex; /* O usa display: grid; */
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+
+
+ /* Estilos comunes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.header img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.content h1, .content h2 {
+    color: #000000;
+}
+
+.content img {
+    max-width: 100%; /* Para hacer la imagen responsiva */
+    height: auto; /* Mantener proporción */ 
+}
+
+.slider {
+    width: 100%; /* Asegura que el slider ocupe todo el ancho disponible */
+    overflow: hidden; /* Evita que se muestren elementos fuera del contenedor */
+}
+
+.slides {
+    display: flex; /* Permite que las imágenes se alineen en fila */
+    transition: transform 0.5s ease; /* Transición suave al cambiar de imagen */
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho del slider */
+}
+
+.slider {
+    width: 100%; /* Asegura que el slider ocupe todo el ancho disponible */
+    max-width: 90%; /* Limita el ancho máximo al 90% del contenedor */
+    margin: 0 auto; /* Centra el slider en la página */
+    overflow: hidden; /* Evita que se muestren elementos fuera del contenedor */
+}
+
+.slider img {
+    width: 100%; /* Las imágenes ocuparán el 100% del ancho del slider */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    max-height: 300px; /* Ajusta la altura máxima según sea necesario */
+}
+
+@media (max-width: 768px) {
+    .header img {
+        height: 70px; /* Reducción en tablets */
+    }
+    .slider {
+        height: auto; /* Ajusta la altura según sea necesario */
+    }
+}

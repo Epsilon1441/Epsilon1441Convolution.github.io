@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>ConVolutioN</title>
+    <style>
+        /* Estilos comunes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+        }
+        .header img {
+            height: 100px;
+            margin-right: 20px;
+        }
+        .header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+        }
+        .content h1, .content h2 {
+            color: #000000;
+        }
+        .content img {
+            max-width: 100%; /* Para hacer la imagen responsiva */
+            height: auto; /* Mantener proporción */ 
+        }
+        .slider {
+            width: 100%; /* Asegura que el slider ocupe todo el ancho disponible */
+            overflow: hidden; /* Evita que se muestren elementos fuera del contenedor */
+        }
+        .slides {
+            display: flex; /* Permite que las imágenes se alineen en fila */
+            transition: transform 0.5s ease; /* Transición suave al cambiar de imagen */
+        }
+        .slide {
+            min-width: 100%; /* Cada slide ocupa el 100% del ancho del slider */
+        }
+        .slider img {
+            width: 100%; /* Las imágenes ocuparán el 100% del ancho del slider */
+            height: auto; /* Mantiene la proporción de las imágenes */
+        }
+        @media (max-width: 768px) {
+            .header img {
+                height: 70px; /* Reducción en tablets */
+            }
+            .slider {
+                height: auto; /* Ajusta la altura según sea necesario */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>ConVolutioN</h1>
+        </div>
+        <div class="secciones">
+            <nav class="menu-principal">
+                <ul> 
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="Categorías.html">Categorías</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="casual.html">Casual</a></li>
+                            <li><a href="Elegant.html">Elegant</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="imagengrande">
+            <img src="https://equusio.vtexassets.com/assets/vtex.file-manager-graphql/images/1eed2175-1f77-47a3-8c85-2e22d27131d9___7b15e3d7997054e89fe544173face631.jpg" alt="Artículos Escolares">
+        </div>
+        <div class="titulo-1">
+            <h1>Anticipo primavera verano 25</h1>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="slider 1.png"  >
+                </div>
+                <div class="slide">
+                    <img src="slider 2.png">
+                </div>
+                <div class="slide">
+                    <img src="slider 3.png">
+                </div>
+            </div>
+            <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+        </div>
+        <script src="java.js"></script>
+    </div>
+
+    <footer class="pie-de-pagina">
+        <div class="imagenes-footer">
+            <img src="footer 2.png">
+            <img src="footer 1.png">
+            <img src="footer 3.png" alt="Imagen 3" class="imagen-derecha">
+        </div>
+        <p>© 2024 Convolution. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

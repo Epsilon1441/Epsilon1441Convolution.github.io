@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css.css">
+
+
+    <title>Categorías</title>
+
+    <style>
+        /* Estilos comunes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+        }
+        .header img {
+            height: 100px;
+            margin-right: 20px;
+        }
+        .header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+        }
+        .content h1, .content h2 {
+            color: #000000;
+        }
+        .content img {
+            max-width: 100%; /* Para hacer la imagen responsiva */
+            height: auto; /* Mantener proporción */ 
+        }
+        .slider {
+            width: 100%; /* Asegura que el slider ocupe todo el ancho disponible */
+            overflow: hidden; /* Evita que se muestren elementos fuera del contenedor */
+        }
+        .slides {
+            display: flex; /* Permite que las imágenes se alineen en fila */
+            transition: transform 0.5s ease; /* Transición suave al cambiar de imagen */
+        }
+        .slide {
+            min-width: 100%; /* Cada slide ocupa el 100% del ancho del slider */
+        }
+        .slider img {
+            width: 100%; /* Las imágenes ocuparán el 100% del ancho del slider */
+            height: auto; /* Mantiene la proporción de las imágenes */
+        }
+        @media (max-width: 768px) {
+            .header img {
+                height: 70px; /* Reducción en tablets */
+            }
+            .slider {
+                height: auto; /* Ajusta la altura según sea necesario */
+            }
+        }
+    </style>
+
+
+
+
+
+</head>
+
+
+<div class="header">
+    <div class="logo">
+        <h1>ConVolutioN</h1>
+    </div>
+    
+    <div class="secciones">
+        <nav class="menu-principal">
+            <ul> 
+            <a href="index.html">Inicio</a>
+            
+             <li class="dropdown">
+               <a href="Categorías.html">Categorías</a>
+               <ul class="dropdown-menu">
+                    <li><a href="casual.html">Casual</a></li>
+                    <li><a href="Elegant.html">Elegant</a></li>
+                </ul> 
+       
+           
+             </li>
+          
+
+
+
+
+            <a href="About.html">About</a>
+            
+        </nav>
+    </div>
+</div>
+
+<div class="content">
+     
+    <p> En ConVolutioN, tu destino ideal para la moda, tenemos el placer de ofrecerte una exquisita colección de ropa que combina lo mejor del estilo casual y elegante. Nuestra tienda se especializa en prendas que no solo son cómodas y versátiles, sino que también destacan por su diseño sofisticado y actual.</p>
+   <h2> <a href="casual.html">Casual</h2></a>
+   <p>  Si buscas un look relajado pero con estilo, nuestra línea de ropa casual es perfecta para ti. Desde cómodas camisetas de algodón hasta jeans ajustados, cada prenda está diseñada para proporcionarte confort sin sacrificar la moda. Además, contamos con una variedad de sudaderas, chaquetas ligeras y accesorios que complementan cualquier outfit, permitiéndote lucir espectacular en tus días más desenfadados.</p>
+   <h2> <a href="Elegant.html">Elegant</h2></a>
+    <p> Para esos momentos especiales o eventos importantes, nuestra colección de ropa elegante te hará brillar. Ofrecemos vestidos sofisticados, trajes bien cortados y blusas de diseño exclusivo que resaltan tu figura y aportan un toque de distinción. Cada pieza ha sido seleccionada con atención al detalle y calidad, asegurando que te sientas segura y elegante en cualquier ocasión.</p>
+    <h2> Variedad y Estilo</h2>
+    <p> En ConVolutioN, entendemos que la moda es una forma de expresión. Por eso, hemos creado una amplia variedad de estilos y tallas para que cada cliente encuentre lo que busca. Ya sea que desees un look casual para un día de paseo o un atuendo elegante para una cena formal, aquí encontrarás exactamente lo que necesitas.</p>
+    <h2> Compromiso con la Calidad</h2>
+    <p>Nos enorgullece ofrecer productos de alta calidad a precios competitivos. Cada prenda es fabricada con materiales duraderos y cómodos, garantizando que tu ropa no solo luzca bien, sino que también resista el paso del tiempo.</p>
+
+
+
+
+
+        <script src="java.js"></script>
+        
+    </body>
+
+
+     
+    <footer class="pie-de-pagina">
+        <div class="imagenes-footer">
+            <img src="footer 2.png" alt="Imagen 2">
+            <img src="footer 1.png" alt="Imagen 1">
+            <img src="footer 3.png" alt="Imagen 3" class="imagen-derecha">
+        </div>
+        <p>© 2024 Convolution. Todos los derechos reservados.</p>
+    </footer>
